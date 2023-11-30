@@ -5,12 +5,15 @@
     --lato: 'Lato', sans-serif; 
     --poppins: 'Poppins', sans-serif;
 
-    --font-small: 1vw;
+    --font-small: 1.2vw;
     --font-medium: 1.6vw;
     --font-big: 1.8vw;
 
     --black: #000;
     --white: #fff;
+    --beige-oscuro:#D5B147;
+    --beige: #FFE69A;
+    --beige-claro: #FFEFBE;
 }
 
 * {
@@ -26,7 +29,10 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+    background: var(--beige-claro);
 }
 
 header {
@@ -37,7 +43,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: red;
+    background-color: var(--beige-oscuro);
     width: 100vw;
     padding: 1% 10%;
     font-family: var(--poppins);
@@ -58,6 +64,7 @@ header {
 }
 
 .header__menu a {
+    position: relative;
     color: var(--white);
     font-size: var(--font-medium);
     font-weight: 600;
@@ -75,7 +82,7 @@ a::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -5px;
     width: 0;
     height: 3px;
     background: var(--white);

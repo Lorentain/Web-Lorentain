@@ -1,0 +1,48 @@
+/* MAIN HERO */
+
+.main-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 8%;
+    background: var(--beige);
+    box-shadow: 0 0 15px var(--beige-oscuro);
+    width: 80vw;
+    font-family: var(--lato)
+}
+
+.main-hero__titulo {
+    font-size: var(--font-big);
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+}
+
+.main-hero__contenedor {
+    display: flex;
+
+    width: 100%;
+    padding: 15px;
+}
+
+.main-hero__imagen {
+    width: 50%;
+}
+
+.main-hero__imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.main-hero__texto {
+    width: 50%;
+    text-align: center;
+    color: var(--white);
+    padding: 15px;
+    font-size: var(--font-small);
+}
+
