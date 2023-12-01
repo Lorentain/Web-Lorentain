@@ -11,9 +11,9 @@
 
     --black: #000;
     --white: #fff;
-    --beige-oscuro:#D5B147;
-    --beige: #FFE69A;
-    --beige-claro: #FFEFBE;
+    --azul-oscuro:#006860;
+    --azul: #169B91;
+    --azul-claro: #5fada8;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background: var(--beige-claro);
+    background: var(--white);
 }
 
 header {
@@ -43,15 +43,18 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: var(--beige-oscuro);
     width: 100vw;
     padding: 1% 10%;
     font-family: var(--poppins);
 }
 
 .header__titulo {
-    color: var(--white);
+    color: var(--black);
     font-size: var(--font-big);
+}
+
+.letra__azul {
+    color: var(--azul);
 }
 
 .header__menu {
@@ -65,7 +68,7 @@ header {
 
 .header__menu a {
     position: relative;
-    color: var(--white);
+    color: var(--black);
     font-size: var(--font-medium);
     font-weight: 600;
 }
@@ -85,7 +88,7 @@ a::before {
     bottom: -5px;
     width: 0;
     height: 3px;
-    background: var(--white);
+    background: var(--azul);
     transition: all ease .5s;
 }
 
