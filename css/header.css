@@ -1,0 +1,171 @@
+    /* VARIABLES ROOT */
+
+    :root {
+        /* Variable fuentes*/
+        --fuente-grande: calc(3rem + 1vw);
+        --fuente-menu: calc(1rem + 0.5vw);
+        --fuente-titulo: calc(2rem + 0.5vw);
+        --fuente-parrafo: calc(1.5rem + 0.5vw);
+        --fuente-small: calc(1rem + 0.5vw);
+
+        --fuente-menu-movil: calc(1.5rem + 0.5vw);
+        --fuente-titulo-movil: calc(2.5rem + 0.5vw);  
+
+        /* Variable colores */
+        --negro: #000;
+        --blanco: #fff;
+        --azul-morado: #5333ed;
+    }
+
+    /* ESTILOS - GENERALES */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+
+        font-family: 'Poppins', sans-serif;
+        /*font-family: 'Lato', sans-serif;*/
+    }
+
+    /* ESTILOS - FLECHA INICIO */
+
+    .contenedor-flecha {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+    }
+
+    #btn-scrollTop {
+        background: transparent;
+    }
+
+    .bx-chevron-up {
+        font-size: 50px;
+        color: var(--negro);
+        border: 2px solid var(--negro);
+        border-radius: 50%;
+    }
+
+    #btn-scrollTop:hover .bx-chevron-up {
+        background: linear-gradient(to right, gray, var(--blanco), gray);
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+
+    /* ESTILOS - CONTENEDOR DEL MENÚ */
+
+    .contenedor-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: orange;
+        width: 100%;
+        padding: 20px 3%;
+    }
+
+    /* ESTILOS - MENÚ NORMAL */
+
+    .menu__normal {
+        display: flex;
+
+        list-style: none;
+    }
+
+    .menu__normal li {
+        margin-left: 45px;
+        position: relative;
+    }
+
+    .menu__normal li::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 3px;
+        background: black;
+        bottom: 0;
+        left: 0;
+        transition: ease-in-out .5s;
+    }
+
+    .menu__normal li:hover:before {
+        width: 100%;
+    }
+
+    .menu__normal a {
+        font-size: var(--fuente-menu);
+        font-weight: 600;
+        color: var(--negro);
+    }
+
+    /* ESTILOS - MENÚ HAMBURGUESA */
+
+    .menu__barras {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .barra {
+        background-color: gray;
+        height: 4px;
+        width: 50px;
+        border-radius: 8px;
+    }
+
+    .menu__barras:hover #barra1 {
+        animation-name: animacionBarra1;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__barras:hover #barra2 {
+        animation-name: animacionBarra2;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__barras:hover #barra3 {
+        animation-name: animacionBarra3;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__barras:not(:hover) #barra1 {
+        animation-name: animacionBarra1Not;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__barras:not(:hover) #barra2 {
+        animation-name: animacionBarra2Not;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__barras:not(:hover) #barra3 {
+        animation-name: animacionBarra3Not;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }

@@ -1,0 +1,20 @@
+/* IMPORTAR FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+/* IMPORTAR HEADER */
+@import url(./css/header.css);
+
+/* IMPORTAR PARALLAX */
+@import url(./css/parallax.css);
+
+/* IMPORTAR KEYFRAMES */
+@import url(./css/keyframes.css);
+
+/* IMPORTAR MEDIA QUERIES */ 
+@import url(./css/mediaqueries.css);
+
+/* IMPORTAR SLIDER */
+@import url(./css/slider.css);
+
+/* IMPORTAR CARDS */
+@import url(./css/cards.css);

@@ -1,0 +1,43 @@
+    /* MEDIA QUERIES */
+
+    @media (max-width: 600px) {
+        .titulo h1 {
+            font-size: var(--fuente-titulo-movil);
+        }
+
+        .menu__barras {
+            display: flex;
+        }
+
+        .menu__barras:hover ~ .menu__normal {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            text-align: center;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            background-color: rgba(0, 0, 0);
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .menu__normal {
+            display: none;
+        }
+
+        .menu__normal li {
+            margin-left: 0;
+        }
+
+        .menu__normal li::before {
+            height: 5px;
+            background-color: var(--blanco);
+        }
+
+        .menu__normal a {
+            color: var(--blanco);
+            font-size: var(--fuente-menu-movil);
+        }
+    }

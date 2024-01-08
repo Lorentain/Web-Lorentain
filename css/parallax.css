@@ -1,0 +1,37 @@
+/* ESTILOS - PARALLAX */
+
+.contenedor-parallax {
+    overflow-x: hidden;
+}
+
+.contenedor-parallax section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor-parallax section h1 {
+    font-size: var(--fuente-grande);
+}
+
+.no-parallax {
+    background-color: var(--azul-morado);
+}
+
+.parallax {
+    background: url("../img/img1.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 999;
+}
+
+.parallax h1 {
+    font-size: var(--fuente-grande);
+    color: #fff;
+}

@@ -1,0 +1,68 @@
+    /* TRANSICIONES - KEYFRAMES */
+
+    /* Animación Menú Hamburguesa */
+
+    @keyframes animacionBarra1 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(215deg);
+        }
+    }
+
+    @keyframes animacionBarra2 {
+        0% {
+            opacity: 1;
+        }
+        
+        10% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes animacionBarra3 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-215deg);
+        }
+    }
+
+    @keyframes animacionBarra1Not {
+        from {
+            transform: rotate(240deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes animacionBarra2Not {
+        0% {
+            opacity: 0;
+        }
+
+        90% {
+            opacity: 0;
+        }
+        
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes animacionBarra3Not {
+        from {
+            transform: rotate(-240deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- FLECHA PARA ARRIBA COMIENZO -->
+    <div class="contenedor-flecha">
+        <button id="btn-scrollTop"><i class='bx bx-chevron-up'></i></button>
+    </div>
+    <!-- FLECHA PARA ARRIBA FINAL -->
+
+    <!-- MENÚ COMIENZO -->
+    <header class="contenedor-menu" id="contenedor-menu">
+        <div class="menu__barras">
+            <div class="barra" id="barra1"></div>
+            <div class="barra" id="barra2"></div>
+            <div class="barra" id="barra3"></div>
+        </div>
+
+        <div class="menu__titulo">
+            <div class="titulo">
+                <h1>Titulo</h1>
+            </div>
+        </div>
+
+        <ul class="menu__normal">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </header>
+    <!-- MENÚ FINAL -->
+
+    <!-- PARALLAX COMIENZO -->
+    <main class="contenedor-parallax">
+        <section class="no-parallax">
+            <h1>No Parallax</h1>
+        </section>
+        <section class="parallax bg">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</h1>
+        </section>
+        <section class="no-parallax">
+            <h1>Otro no Parallax</h1>
+        </section>
+    </main>
+    <!-- PARALLAX FINAL -->
+
+    <!-- SLIDER COMIENZO -->
+    <section class="contenedor-slider">
+        <div class="atras botones">
+            &#60
+        </div>
+
+        <div class="adelante botones">
+            &#62
+        </div>
+
+        <img src="./img/img1.jpg" id="imagen">
+    </section>
+    <!-- SLIDER FINAL -->
+
+    <!-- CARDS COMIENZO -->
+    <section class="contenedor-cards">
+        <div class="card">
+            <p id="card1"><span>1</span></p>
+            <p id="card2"><span>2</span></p>
+            <p id="card3"><span>3</span></p>
+        </div>
+    </section>
+    <!-- CARDS FINAL -->
+
+    <!-- IMPORTAR JAVASCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>
